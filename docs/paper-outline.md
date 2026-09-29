@@ -18,4 +18,4 @@ A registration-time proof of knowledge can prevent commitments for which the sub
 
 ## Evidence needed before submission
 
-Real cryptographic integration tests, independent review of circuit/on-chain hash parity, trustworthy setup transcript, raw performance measurements, and a formalized adversarial strategy. Do not turn the timeline in this repository into a claim of experiments completed during 2025–2026.
+Real cryptographic integration tests, independent review of circuit/on-chain hash parity, trustworthy setup transcript, raw performance measurements, and a formalized adversarial strategy.
