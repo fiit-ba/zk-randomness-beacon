@@ -1,6 +1,8 @@
 """Small independent state model for phase and withholding experiments.
 
 This is not an implementation of Poseidon, Groth16, or the EVM.
+Python's sha3_256 is not Ethereum's Keccak-256; only relative properties
+of this model's outputs are used in the tests.
 """
 
 from dataclasses import dataclass, field

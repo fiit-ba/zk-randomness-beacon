@@ -11,7 +11,7 @@ interface Vm {
 }
 
 contract MockPoseidon is IPoseidon3 {
-    function poseidon(uint256[3] calldata inputs) external pure returns (uint256) {
+    function poseidon(uint256[3] calldata inputs) external pure override returns (uint256) {
         return uint256(keccak256(abi.encode(inputs))) %
             21888242871839275222246405745257275088696311157297823662689037894645226208583;
     }
@@ -25,7 +25,7 @@ contract MockVerifier is IKnowledgeVerifier {
         uint256[2][2] calldata,
         uint256[2] calldata,
         uint256[3] calldata
-    ) external view returns (bool) { return allow; }
+    ) external view override returns (bool) { return allow; }
 }
 
 contract ZKRandomnessBeaconTest {
